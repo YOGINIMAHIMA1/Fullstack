@@ -117,3 +117,27 @@ const CompanyNames= Companies.map(function(company){
 });
     console.log(CompanyNames)
 
+const arrMap= arr21.map((age)=>Math.sqrt(age))
+console.log(arrMap)
+// sort
+/*const  sortCompanies= companies.sort((sort1)=>)
+console.log(sortCompanies)*/
+/*const sortedCompanies= Companies.sort(function(c1,c2)
+{
+    if(c1.start >c2.start)
+    {
+        return 1;
+    }
+    else
+    {
+        return -1;
+    }
+})
+console.log(sortedCompanies)*/
+
+const sortCompanies= Companies.sort((a,b)=>(a.start>b.start ?1:-1))
+console.log(sortCompanies);
+//Sort ages
+ const ages=[20,12,23,32,34,11,45]
+ const sortAges= ages.sort();
+ console.log(sortAges);
