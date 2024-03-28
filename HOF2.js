@@ -167,4 +167,31 @@ console.log(sortCompanies);
 ]*/
   console.log(products)
 products.sort((a,b)=>b.price - a.price);
-console.log(products)
+console.log(products)/* [
+  { name2: 'laptop', price: 5000 },
+  { name1: 'phone', price: 4300 },
+  { name3: 'dekstop', price: 4000 }
+]*/
+// reduce
+// sum using for loop
+let  ageSum=0;
+for(var i=0;i<ages.length;i++)
+{
+    ageSum += ages[i]
+}
+console.log(ageSum)
+// using reduce
+
+let Sum= ages.reduce((sum, age)=> sum + age,0)
+
+console.log(Sum)
+
+
+// to get total for all companies
+let totalyrs= Companies.reduce(function(total,company1){ return total+(company1.end- company1.start)},0);
+console.log(totalyrs)
+
+let totalyears= Companies.reduce((total1, company2)=>total1 +(company2.end-company2.start),0)
+console.log(totalyears)
+
+
