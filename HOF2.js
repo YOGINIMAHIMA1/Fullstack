@@ -138,6 +138,33 @@ console.log(sortedCompanies)*/
 const sortCompanies= Companies.sort((a,b)=>(a.start>b.start ?1:-1))
 console.log(sortCompanies);
 //Sort ages
- const ages=[20,12,23,32,34,11,45]
- const sortAges= ages.sort();
- console.log(sortAges);
+ const ages=[20,12,23,32,34,11,45,5,6]
+ const sortAges= ages.sort((a,b)=>a-b);
+ console.log(sortAges);/* [  /* when we do a-b it will create three scenarios first a<0 return a it means a-b is -ve
+     if a-b =0 then it will return nothing and if a-b is +ve then it will return b
+    11, 12, 20, 23,
+    32, 34, 45
+  ] */
+
+  const products=[
+    {
+      name2:'laptop',
+      price:5000
+    },
+    {
+       name3:'dekstop',
+       price:4000
+    },
+    {
+           name1:'phone',
+           price:4300
+    }
+  ];
+  products.sort((a,b)=>a.price - b.price);/*[
+  { name3: 'dekstop', price: 4000 },
+  { name1: 'phone', price: 4300 },
+  { name2: 'laptop', price: 5000 }
+]*/
+  console.log(products)
+products.sort((a,b)=>b.price - a.price);
+console.log(products)
