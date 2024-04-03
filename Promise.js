@@ -15,8 +15,6 @@ const posts = [
   }
   getPosts();
 
-
-
   const student =[
     {id:1 , name:'hkirat'},
     {id:2,name:'komal'},
@@ -24,14 +22,27 @@ const posts = [
     ];
 
     function data(){
+        
         setTimeout(()=>
         {
-            let out=''
+           let out='' 
             student.forEach((data1)=>
             {
-               out+= `<li>${data1}</li>`
+               out+= `<li>${data1.id}</li>`
             })
+            document.body.innerHTML=out;
         },2000)
-        document.body.innerHTML=out;
+        
     }
     data();
+
+        
+   function createPost(post1)
+  {
+      setTimeout(()=>
+      {
+         posts.push(post1) 
+      },1000)
+  }
+  createPost({title:'Post three', body:'This is post three'})
+  
