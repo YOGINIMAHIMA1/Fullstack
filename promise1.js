@@ -65,6 +65,7 @@ fetch("https://jsonplaceholder.typicode.com/posts").then((data)=>
 console.log(result)
 
 // to catch the error
+/*
  myPromise= new Promise((res,rej)=>
 {
   let error=true;
@@ -87,4 +88,20 @@ myPromise.then((value)=>
 }).catch(err=>
 {
   console.error(err)
+})
+*/
+
+const myNextPromise= new Promise((res,rej)=>
+{
+  setTimeout(function(){
+  res('my next promise resolved')
+},3000)
+});
+myNextPromise.then((value)=>
+{
+  console.log(value)
+})
+myPromise.then((value)=>
+{
+  console.log(value)
 })
