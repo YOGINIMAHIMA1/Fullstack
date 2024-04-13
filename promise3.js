@@ -6,7 +6,14 @@ fetch("https://jsonplaceholder.typicode.com/users").then(response=>
     //console.log(response)-it will not return json data
     return response.json();// it will send the response
 
-}).then(data=>
+})/*.then(data=>
 {
     console.log(data)// json data printed
+})*/  // it will not print the data outside this block
+
+.then(data=>{
+    data.forEach(user=>{
+        console.log(user)
+    })
 })
+console.log(users)
