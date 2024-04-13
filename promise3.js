@@ -17,3 +17,8 @@ fetch("https://jsonplaceholder.typicode.com/users").then(response=>
     })
 })
 console.log(users)
+// .then() ki chaining ko khatam karane ke liye aysnc await aa gaya ye kafi better way hai code karne ka ye bhi wait karane ke liye use hota hai
+
+
+
+
