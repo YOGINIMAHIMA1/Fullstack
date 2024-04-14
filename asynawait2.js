@@ -12,7 +12,7 @@ const anotherFunc= async()=>
 {
     const data= await myCoolFunction();
     myUsers.userList=data;
-    console.log(myUsers.userList)
+    console.log(myUsers.userList)// json data
 }
 anotherFunc();
-console.log(myUsers.userList)
+console.log(myUsers.userList) //[]
