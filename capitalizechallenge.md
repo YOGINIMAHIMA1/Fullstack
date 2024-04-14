@@ -19,5 +19,6 @@
 <details>
   <summary>click for Solutions </summary>
   there are many ways to do this 
+  
   ```In all of these we get first character of string then we use **slice** or **substring** to get rest of string ```
   </details>
