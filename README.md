@@ -1,10 +1,10 @@
 # Specific Javascript Topics
-**Callback**
+- **Callback**
 
-**Promises**
+- **Promises**
 
-**Async-await**
+- **Async-await**
 
-**Strings**
+- **Strings**
 
-**Math**
+- **Math**
